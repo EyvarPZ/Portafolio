@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('https://images.unsplash.com/photo-1606228281437-dc226988dc3a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjA0NjB8MHwxfHNlYXJjaHw0fHxsb2ZpfGVufDB8fHx8MTc1MDY3MjYxNnww&ixlib=rb-4.1.0&q=85');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.glassmorphism {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.lofi-glow {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.lofi-text {
+  color: #22c55e;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+.floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.typing-animation {
+  border-right: 2px solid #22c55e;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: #22c55e; }
+  51%, 100% { border-color: transparent; }
+}
+
+.skill-progress {
+  height: 6px;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border-radius: 3px;
+  transition: width 2s ease-in-out;
+}
+
+.skill-bar {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+  overflow: hidden;
+  height: 6px;
+}
+
+.section-spacing {
+  padding: 80px 20px;
+}
+
+.content-box {
+  padding: 24px;
+  margin: 16px 0;
+}
+
+.text-spacing {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.lofi-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 12px 40px rgba(34, 197, 94, 0.2);
+}
